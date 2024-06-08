@@ -21,7 +21,7 @@ testing:
     lenght: .word 0x8
     array: .word 0x3 0x1 0x4 0x1 0x5 0x9 0x2 0x6
 
-#precondition -> lenght >= 1
+#precondition: lenght >= 1
 #max = array[0]
 #if lenght > 1:
 #    while(lenght > 1)
