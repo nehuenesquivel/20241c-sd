@@ -2,8 +2,7 @@ main:
     addi t0 zero n
     lw t0 0(t0)
     addi a1 zero 2
-    addi a2 zero -1
-    sw a2 0(sp)
+    add a2 zero sp
 
 fibonacci:
     blt t0 a1 base
@@ -15,15 +14,15 @@ fibonacci:
 
 base:
     add a0 a0 t0
+    beq a2 sp end
     lw t0 0(sp)
-    beq t0 a2 end
     addi sp sp 16
     j fibonacci
 
 end:
 
 testing:
-    n: .word 0x5
+    n: .word 0x8
 
 #def fibonacci(n):
 #    if n < 2:
