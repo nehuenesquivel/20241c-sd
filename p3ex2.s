@@ -21,6 +21,6 @@ testing:
     l: .word 0x5
 
 #precondition: l >= 0
-#while(l > 0)
+#while(l > 0):
 #    l--
 #    s[l] = q[l]
